@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhawana - Book a Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" style="text-decoration: none; color: inherit;">
+                <div class="header-logo-container">
+                    <span class="header-brand serif-font">Bháwana</span>
+                    <span class="header-sub cursive-font">fine dining</span>
+                </div>
+            </a>
+            <a href="menu.html" class="btn btn-outline">View Menu</a>
+        </div>
+    </header>
+
+    <section class="page-section">
+        <div class="content-container">
+            <h1 class="page-title serif-font">Reserve Your Table</h1>
+            <p class="page-subtitle cursive-font">Join us for an unforgettable evening</p>
+
+            <form action="#" method="POST" class="reservation-form">
+
+                <fieldset class="form-group">
+                    <legend class="sr-only">Contact Details</legend>
+                    <div class="input-wrapper">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Ex. John Doe">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+94 77 123 4567">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <legend class="sr-only">Reservation Details</legend>
+                    <div class="row">
+                        <div class="input-wrapper half-width">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="input-wrapper half-width">
+                            <label for="time">Time</label>
+                            <input type="time" id="time" name="time" min="17:00" max="23:00" required>
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="guests">Number of Guests</label>
+                        <input type="number" id="guests" name="guests" min="1" max="20" value="2" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="requests">Special Requests (Allergies, Occasions)</label>
+                        <textarea id="requests" name="requests" rows="4"
+                            placeholder="Let us know how we can make your night special..."></textarea>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn btn-submit">Confirm Reservation</button>
+            </form>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <p class="serif-font">Bháwana by N.W.K.T.M JAYASOORIYA (24000957)</p>
+    </footer>
+
+</body>
+
+</html>
